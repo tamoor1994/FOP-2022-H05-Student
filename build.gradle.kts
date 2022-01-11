@@ -1,18 +1,18 @@
 import org.sourcegrade.submitter.submit
 
 plugins {
-  java
-  application
-  id("org.sourcegrade.submitter").version("0.4.0")
+    java
+    application
+    id("org.sourcegrade.submitter").version("0.4.0")
 }
 
 submit {
-  assignmentId = "h05" // do not change assignmentId
-  studentId = null // TU-ID  z.B. "ab12cdef"
-  firstName = null
-  lastName = null
-  // Optionally require tests for prepareSubmission task. Default is true
-  requireTests = true
+    assignmentId = "h05" // do not change assignmentId
+    studentId = null // TU-ID  z.B. "ab12cdef"
+    firstName = null
+    lastName = null
+    // Optionally require tests for prepareSubmission task. Default is true
+    requireTests = true
 }
 
 // !! Achtung !!
@@ -21,25 +21,25 @@ submit {
 // Falsch z.B. 1234567
 
 repositories {
-  mavenCentral()
+    mavenCentral()
 }
 
 dependencies {
-  // JUnit only available in "test" source set (./src/test)
-  testImplementation("org.junit.jupiter:junit-jupiter:5.8.1")
+    // JUnit only available in "test" source set (./src/test)
+    testImplementation("org.junit.jupiter:junit-jupiter:5.8.1")
 }
 
 java {
-  sourceCompatibility = JavaVersion.VERSION_11
-  targetCompatibility = JavaVersion.VERSION_11
+    sourceCompatibility = JavaVersion.VERSION_11
+    targetCompatibility = JavaVersion.VERSION_11
 }
 
 application {
-  mainClass.set("h05.Main")
+    mainClass.set("h05.Main")
 }
 
 tasks {
-  test {
-    useJUnitPlatform()
-  }
+    test {
+        useJUnitPlatform()
+    }
 }
