@@ -4,6 +4,9 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+/**
+ * An example JUnit test class.
+ */
 public class ExampleJUnitTest {
 
     @Test
