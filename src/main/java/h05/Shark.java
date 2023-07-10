@@ -64,7 +64,22 @@ public class Shark extends Animal implements Swimming, IntConsumer {
     }
 
     @Override
-    public void accept(int value) {
+    public void accept(int reductionOfHunger) {
+        reductionOfHunger -= degreeOfHunger < 0? reductionOfHunger : 0;
+    }
 
+    /**
+     * Sets the attribut specificSpecies to the given value 0 to 10
+     * @param specificSpecies specific shark species
+     * @return the specific shark species
+     */
+    public short setSpecificSpecies(short specificSpecies) {
+        if (specificSpecies < 0) {
+            return this.specificSpecies = 0;
+        } else if (specificSpecies > 10) {
+            return this.specificSpecies = 10;
+        } else {
+            return this.specificSpecies = specificSpecies;
+        }
     }
 }
