@@ -8,9 +8,9 @@ public interface Walking {
     byte getNumberOfLegs();
 
     /**
-     *
-     * @param distance
-     * @return
+     * gives the average speed
+     * @param distance declares the distace
+     * @return the average speed of the distance
      */
     double getAverageSpeed(double distance);
 
