@@ -7,6 +7,9 @@ public class SaltWaterCrocodile extends Animal implements Walking, Swimming {
      */
     public static double averageSpeed;
 
+    /**
+     * Constructer of the class
+     */
     public SaltWaterCrocodile() {
         super();
         animalType = AnimalType.CROCODYLIDAE;

@@ -2,15 +2,23 @@ package h05;
 
 public class Ostrich extends Animal implements Walking {
 
-   public Ostrich() {
+    /**
+     * Constructor of the class
+     *
+     */
+    public Ostrich() {
        super();
        animalType = AnimalType.AVES;
    }
     private int distanceSoFar;
 
+    /**
+     * @return the distance
+     */
     public int getDistanceSoFar() {
         return distanceSoFar;
     }
+
     @Override
     String letMeMove() {
         distanceSoFar++;
